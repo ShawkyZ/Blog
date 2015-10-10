@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>مدونة شوقي</title>
+    <description>مدونة خاصة بالتقنية و البرمجة</description>
+    <link>http://shawkyz.info/</link>
+    <atom:link href="http://shawkyz.info/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Announcing Version 2.0</title>
+        <description>&lt;p&gt;In an effort to make Pixyll easier to customize and more aesthetically pleasing, we’ve release version &lt;code&gt;2.0&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Pixyll now features:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Line anchors in code blocks and new syntax highlighting&lt;/li&gt;
+  &lt;li&gt;A customizable variables file&lt;/li&gt;
+  &lt;li&gt;Modular, and lighter weight CSS&lt;/li&gt;
+  &lt;li&gt;No more &lt;code&gt;max-width&lt;/code&gt; media queries&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 11 Jul 2015 00:00:00 +0200</pubDate>
+        <link>http://shawkyz.info/jekyll/pixyll/2015/07/11/announcing-pixyll-version-2/</link>
+        <guid isPermaLink="true">http://shawkyz.info/jekyll/pixyll/2015/07/11/announcing-pixyll-version-2/</guid>
+      </item>
+    
+      <item>
+        <title>Hello, Pixyll</title>
+        <description>&lt;p&gt;Hello.&lt;/p&gt;
+
+&lt;p&gt;Pixyll is a simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff. It’s mobile &lt;em&gt;first&lt;/em&gt;, fluidly responsive, and delightfully lightweight.&lt;/p&gt;
+
+&lt;p&gt;It’s pretty minimal, but leverages large type and drastic contrast to make a statement, on all devices.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;
+    Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.
+  &lt;/p&gt;
+  &lt;footer&gt;&lt;cite title=&quot;Antoine de Saint-Exupéry&quot;&gt;Antoine de Saint-Exupéry&lt;/cite&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;where-is-it&quot;&gt;Where is it?&lt;/h2&gt;
+
+&lt;p&gt;Checkout the &lt;a href=&quot;https://github.com/johnotander/pixyll&quot;&gt;Github repository&lt;/a&gt; to download it, request a feature, or report a bug.&lt;/p&gt;
+
+&lt;p&gt;It’s free, and open source (&lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;MIT&lt;/a&gt;).&lt;/p&gt;
+</description>
+        <pubDate>Wed, 11 Jun 2014 17:31:19 +0200</pubDate>
+        <link>http://shawkyz.info/jekyll/pixyll/2014/06/11/welcome-to-pixyll/</link>
+        <guid isPermaLink="true">http://shawkyz.info/jekyll/pixyll/2014/06/11/welcome-to-pixyll/</guid>
+      </item>
+    
+      <item>
+        <title>So, What is Jekyll?</title>
+        <description>&lt;p&gt;Jekyll is a tool for transforming your plain text into static websites and 
+blogs. It is simple, static, and blog-aware. Jekyll uses the 
+&lt;a href=&quot;http://docs.shopify.com/themes/liquid-basics&quot;&gt;Liquid&lt;/a&gt; templating
+language and has builtin &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;
+and &lt;a href=&quot;http://en.wikipedia.org/wiki/Textile_(markup_language)&quot;&gt;Textile&lt;/a&gt; support.&lt;/p&gt;
+
+&lt;p&gt;It also ties in nicely to &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Learn more about Jekyll on their &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;website&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 09 Jun 2014 14:32:18 +0200</pubDate>
+        <link>http://shawkyz.info/jekyll/pixyll/2014/06/09/so-what-is-jekyll/</link>
+        <guid isPermaLink="true">http://shawkyz.info/jekyll/pixyll/2014/06/09/so-what-is-jekyll/</guid>
+      </item>
+    
+      <item>
+        <title>Pixyll has Pagination</title>
+        <description>&lt;p&gt;This is an empty post to illustrate the pagination component with Pixyll.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 08 Jun 2014 13:21:29 +0200</pubDate>
+        <link>http://shawkyz.info/jekyll/pixyll/2014/06/08/pixyll-has-pagination/</link>
+        <guid isPermaLink="true">http://shawkyz.info/jekyll/pixyll/2014/06/08/pixyll-has-pagination/</guid>
+      </item>
+    
+  </channel>
+</rss>
