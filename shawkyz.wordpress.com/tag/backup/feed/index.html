@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:georss="http://www.georss.org/georss" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:media="http://search.yahoo.com/mrss/"
+	>
+
+<channel>
+	<title>مدونة شوقي &#187; BackUp</title>
+	<atom:link href="https://shawkyz.wordpress.com/tag/backup/feed/" rel="self" type="application/rss+xml" />
+	<link>https://shawkyz.wordpress.com</link>
+	<description>مدونة خاصة بأخبار التنقية و البرمجيات</description>
+	<lastBuildDate>Sun, 11 Oct 2015 01:56:10 +0000</lastBuildDate>
+	<language>ar</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.com/</generator>
+<cloud domain='shawkyz.wordpress.com' port='80' path='/?rsscloud=notify' registerProcedure='' protocol='http-post' />
+<image>
+		<url>https://secure.gravatar.com/blavatar/584ddeb61278e27b5551cae9dbd79cd3?s=96&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Fbuttonw-com.png</url>
+		<title> &#187; BackUp</title>
+		<link>https://shawkyz.wordpress.com</link>
+	</image>
+	<atom:link rel="search" type="application/opensearchdescription+xml" href="https://shawkyz.wordpress.com/osd.xml" title="مدونة شوقي" />
+	<atom:link rel='hub' href='https://shawkyz.wordpress.com/?pushpress=hub'/>
+	<item>
+		<title>حفظ و استعادة Backup ف MSSQL Database بال #C</title>
+		<link>https://shawkyz.wordpress.com/2014/02/23/%d8%ad%d9%81%d8%b8-%d9%88-%d8%a7%d8%b3%d8%aa%d8%b9%d8%a7%d8%af%d8%a9-backup-%d9%81-mssql-database-%d8%a8%d8%a7%d9%84-c/</link>
+		<comments>https://shawkyz.wordpress.com/2014/02/23/%d8%ad%d9%81%d8%b8-%d9%88-%d8%a7%d8%b3%d8%aa%d8%b9%d8%a7%d8%af%d8%a9-backup-%d9%81-mssql-database-%d8%a8%d8%a7%d9%84-c/#comments</comments>
+		<pubDate>Sun, 23 Feb 2014 13:35:50 +0000</pubDate>
+		<dc:creator><![CDATA[Abdelrhman Shawky]]></dc:creator>
+				<category><![CDATA[Tech]]></category>
+		<category><![CDATA[BackUp]]></category>
+		<category><![CDATA[C#]]></category>
+		<category><![CDATA[MSSQL]]></category>
+		<category><![CDATA[Restore]]></category>
+
+		<guid isPermaLink="false">http://shawkyz.wordpress.com/?p=63</guid>
+		<description><![CDATA[ازاي تاخد Database Backup من البرنامج بتاعك و ازاي تعمل Restore مدبأيا ازاي نعمل Backup لـ Database MSSQL اصلا ؟ لو عندنا مثلا Database اسمها TestDB و عايز اعملها Backup على ال C:\TestDB.bak هنكتب الامر ده ف ال SQL &#8216;BACKUP DATABASE TestDB TO DISK =&#8217;C:\TestDB.bak طيب نعملها ازاي ف ال App بتاعنا ممكن ببساطة نضيف [&#8230;]<img alt="" border="0" src="https://pixel.wp.com/b.gif?host=shawkyz.wordpress.com&#038;blog=64194303&#038;post=63&#038;subd=shawkyz&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<p style="text-align:right;">
+<p style="direction:rtl;"><a href="https://shawkyz.files.wordpress.com/2014/02/database-backup-ic59flemi_emresupcin.png"><img class="size-full wp-image" id="i-72" alt="Image" src="https://shawkyz.files.wordpress.com/2014/02/database-backup-ic59flemi_emresupcin.png?w=650" /></a></p>
+<p style="direction:rtl;">ازاي تاخد Database Backup من البرنامج بتاعك و ازاي تعمل Restore</p>
+<p style="direction:rtl;">مدبأيا ازاي نعمل Backup لـ Database MSSQL اصلا ؟</p>
+<p style="direction:rtl;">لو عندنا مثلا Database اسمها TestDB و عايز اعملها Backup على ال C:\TestDB.bak</p>
+<p style="direction:rtl;">هنكتب الامر ده ف ال SQL</p>
+<p style="direction:rtl;">&#8216;BACKUP DATABASE TestDB TO DISK =&#8217;C:\TestDB.bak</p>
+<p style="direction:rtl;">
+<p style="direction:rtl;">طيب نعملها ازاي ف ال App بتاعنا</p>
+<p style="direction:rtl;">ممكن ببساطة نضيف folderBrowserDialog عشان بس نحدد مكان ال Folder اللي الـ User عايز يحفظ فيه ال BackUp</p>
+<p style="direction:rtl;">و ناخد بعد كده ال path اللي اختاره و نشتغل عليه احنا</p>
+<p style="direction:rtl;">مثال بسيط</p>
+<p style="direction:rtl;">انا عامل كلاس اسمه Database فيه كل ال Functions الخاصة بالتعامل مع ال Database بتاعتي</p>
+<p style="direction:rtl;">و واخد من الكلاس ده object اسمه db و فيه Function اسمها BackUpDB و بتاخد parameter هو string path</p>
+<p style="direction:rtl;">
+<p style="direction:rtl;">دلوقتي لما ال user يدوس على button بتاع ال Browse اللي هيفتحله ال folderBrowserDialog</p>
+<p style="direction:ltr;">
+<p style="direction:rtl;text-align:right;">ده هيكون code ال button click</p>
+<p style="direction:rtl;">
+<pre class="brush: csharp; title: ; notranslate">
+private void button6_Click(object sender, EventArgs e)
+{
+folderBrowserDialog1.ShowDialog();
+string path = folderBrowserDialog1.SelectedPath;
+if(path!=&quot;&quot;)
+{
+
+db.BackUpDB(path);
+MessageBox.Show(&quot;تم الحفظ بنجاح&quot;);
+}
+else { MessageBox.Show(&quot;خطأ في الحفظ&quot;); }
+}
+</pre>
+<p style="direction:ltr;text-align:left;">
+<p style="direction:ltr;text-align:left;">
+<p style="direction:rtl;">ببساطة باخد منه ال path و بديه لل BackUpDB Function</p>
+<p style="direction:rtl;">ايه اللي بيحصل ف ال BackUpDB Function بقى</p>
+<p style="direction:rtl;">
+<pre class="brush: csharp; title: ; notranslate">
+public void BackUpDB(string path)
+{
+con.Open();
+SqlCommand cm = new SqlCommand(&quot;USE master&quot;, con);
+cm.ExecuteNonQuery();
+SqlCommand cmd = new SqlCommand(&quot;BACKUP DATABASE TestDB TO DISK = '&quot; + path + &quot;\\TestDB&quot; +DateTime.Now.ToShortDateString().Replace('/','-') + &quot;.bak'&quot;, con);
+
+cmd.ExecuteNonQuery();
+con.Close();
+}
+</pre>
+<p style="direction:rtl;">
+<p style="direction:rtl;">طيب دلوقتي انا عايز اعمل restore</p>
+<p style="direction:rtl;">ال restore هيجيلك exception غبي كده هيقولك ان فيه connection لل database مفتوحة و انها بتستعمل دلوقتي .. طب عشان نخلص من الحوارات دي نعمل ايه ؟</p>
+<p style="direction:rtl;">هنعمل 4 حاجات</p>
+<p style="text-align:right;">
+<p style="direction:rtl;">1- هنشتغل على Master بدل ال Database بتاعتنا بمعنى اني هعمل Use master</p>
+<p style="direction:rtl;">2- هخلي ال database بتاعتي Single_User</p>
+<p style="direction:rtl;">3-هعمل Restore With Replace بأمر زي ده كده</p>
+<p style="direction:rtl;">RESTORE DATABASE TestDB FROM DISK=&#8217;C:\TestDB.bak&#8217; With Replace</p>
+<p style="direction:rtl;">4- هرجع ال database بتاعتي تاني Multi_User</p>
+<p style="text-align:right;">
+<p style="direction:rtl;">
+<p style="direction:rtl;">طيب نعملها ازاي ف ال App بتاعنا</p>
+<p style="direction:rtl;">هنعمل المرادي SaveFileDialog عشان نحدد ال path اللي عايز يحفظ فيه ال Backup و ناخد ال path ده و نعمل restore منه</p>
+<p style="direction:rtl;">مثال بسيط</p>
+<p style="direction:rtl;">الكلاس بتاع ال Database في Function اسمها RestoreDB بتاخد string path برضه</p>
+<p style="direction:rtl;">دلوقتي لما ال user يدوس على button عشان يفتح ال SaveFileDialog هاخد ال FileName من ال SaveFileDialog ده و هبعته للـFunction</p>
+<p style="direction:rtl;">
+<pre class="brush: csharp; title: ; notranslate">
+private void button7_Click(object sender, EventArgs e)
+{
+openFileDialog2.Filter = &quot;Backup File (*.bak)|*.bak&quot;;
+openFileDialog2.FileName = null;
+openFileDialog2.ShowDialog();
+string path = openFileDialog2.FileName;
+if (path != &quot;&quot;)
+{
+try
+{
+db.RestoreDB(path);
+MessageBox.Show(&quot;تم &quot;);
+Application.Restart();
+}
+catch { MessageBox.Show(&quot;خطأ&quot;); }
+}
+else
+{
+MessageBox.Show(&quot;خطأ في الاسترجاع&quot;);
+}
+}
+</pre>
+<p style="direction:rtl;">و ده اللي بيحصل جوة ال Function بتاعت RestoreDB</p>
+<pre class="brush: csharp; title: ; notranslate">
+public void RestoreDB(string path)
+{
+
+con.Open();
+SqlCommand cm = new SqlCommand(&quot;USE master&quot;, con);
+cm.ExecuteNonQuery();
+string Alter1 = @&quot;ALTER DATABASE [TestDB] SET Single_User WITH Rollback Immediate&quot;;
+SqlCommand Alter1Cmd = new SqlCommand(Alter1, con);
+Alter1Cmd.ExecuteNonQuery();
+try
+{
+SqlCommand cmd = new SqlCommand(&quot;RESTORE DATABASE TestDB FROM DISK='&quot; + path + &quot;' With Replace&quot;, con);
+cmd.ExecuteNonQuery();
+}
+catch { }
+string Alter2 = @&quot;ALTER DATABASE [TestDB] SET Multi_User&quot;;
+SqlCommand Alter2Cmd = new SqlCommand(Alter2, con);
+Alter2Cmd.ExecuteNonQuery();
+con.Close();
+}
+</pre>
+<p style="direction:rtl;">
+<p style="direction:rtl;">أتمنى ان يكون أفادكوا ال Topic البسيط ده و لو حد عنده اقتراحات او تعديلات يا ريت يقول</p><br />  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/shawkyz.wordpress.com/63/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/shawkyz.wordpress.com/63/" /></a> <img alt="" border="0" src="https://pixel.wp.com/b.gif?host=shawkyz.wordpress.com&#038;blog=64194303&#038;post=63&#038;subd=shawkyz&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+			<wfw:commentRss>https://shawkyz.wordpress.com/2014/02/23/%d8%ad%d9%81%d8%b8-%d9%88-%d8%a7%d8%b3%d8%aa%d8%b9%d8%a7%d8%af%d8%a9-backup-%d9%81-mssql-database-%d8%a8%d8%a7%d9%84-c/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+	
+		<media:content url="https://1.gravatar.com/avatar/4efbe968ac6a1212dca775dae4e4ce04?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">abdelrhmanshawkyb</media:title>
+		</media:content>
+
+		<media:content url="https://shawkyz.files.wordpress.com/2014/02/database-backup-ic59flemi_emresupcin.png?w=650" medium="image">
+			<media:title type="html">Image</media:title>
+		</media:content>
+	</item>
+	</channel>
+</rss>

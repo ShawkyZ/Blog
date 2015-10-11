@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+	<ShortName>shawkyz</ShortName>
+	<Description>Search مدونة شوقي - مدونة خاصة بأخبار التنقية و البرمجيات</Description>
+	<Contact>support@wordpress.com</Contact>
+	<Url type="application/atom+xml" template="https://shawkyz.wordpress.com/?s={searchTerms}&amp;feed=atom"/>
+	<Url type="application/rss+xml"  template="https://shawkyz.wordpress.com/?s={searchTerms}&amp;feed=rss2"/>
+	<Url type="text/html"            template="https://shawkyz.wordpress.com/?s={searchTerms}" method="GET" />
+	<Url type="application/opensearchdescription+xml" rel="self" template="/osd.xml" />
+	<LongName>مدونة شوقي</LongName>
+	<Image height="16" width="16" type="image/vnd.microsoft.icon">https://secure.gravatar.com/blavatar/f05a375cdc2e5ec836a4fa3d3d14570b?s=16&#038;d=https%3A%2F%2Fshawkyz.wordpress.com%2Ffavicon.ico</Image>
+	<Image height="64" width="64" type="image/jpeg">https://secure.gravatar.com/blavatar/584ddeb61278e27b5551cae9dbd79cd3?s=64&#038;d=https%3A%2F%2Fs-ssl.wordpress.com%2Fi%2Flogo%2Fgray-white-transparent-64.png</Image>
+	<Query role="example" searchTerms="photography" />
+	<Tags>mssql c backup restore</Tags>
+	<Developer>Automattic</Developer>
+	<SyndicationRight>open</SyndicationRight>
+	<AdultContent>false</AdultContent>
+	<Language>ar</Language>
+	<OutputEncoding>UTF-8</OutputEncoding>
+	<InputEncoding>UTF-8</InputEncoding>
+	<moz:SearchForm>https://shawkyz.wordpress.com</moz:SearchForm>
+</OpenSearchDescription>
