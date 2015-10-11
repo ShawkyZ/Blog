@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>الرئيسية</title>
+    <title>تواصل معي</title>
     
     <meta name="author" content="Abdelrhman Shawky">
 
@@ -74,7 +74,7 @@
     
       
       	
-      	<li><a href="/ContactUs.html">تواصل معي</a></li>
+      	<li class="active"><a href="/ContactUs.html" class="active">تواصل معي</a></li>
       	
       
     
@@ -135,77 +135,52 @@
       <div class="container">
         
 <div class="page-header">
-  <h1>الرئيسية </h1>
+  <h1>تواصل معي </h1>
 </div>
 
 <div class="row">
   <div class="col-xs-12">
-    
-<div class="posts">
-    
-      <div class="post py3">
-        <a href="/2015/10/11/hello4" class="post-link"><h3 class="h1 post-title">Hello4</h3></a>
-		 <p class="post-meta">11 Oct 2015</p>
-         <p class="post-summary">
-          
-            
+    <div class="py2">
+  <form action="https://formspree.io/abdelrhmanshawky4@gmail.com" method="POST" class="form-stacked">
+      <input type="text" name="email" class="field-light" placeholder="Email Address">
+      <textarea type="text" name="content" class="field-light" rows="5" placeholder="What would you like to say?"></textarea>
+      <input type="hidden" name="_next" value="/thanks/" />
+      <input type="hidden" name="_subject" value="New submission!" />
+      <input type="text" name="_gotcha" style="display:none" />
+      <input type="submit" class="button button-blue button-big mobile-block" value="Say Hello">
+    </form>
+</div>
+  <script>
+    var contactForm = document.querySelector('form'),
+    inputEmail = contactForm.querySelector('[name="email"]'),
+    textAreaMessage = contactForm.querySelector('[name="content"]'),
+    sendButton = contactForm.querySelector('button');
 
-          
-        </p>
-		<br />
-      </div>
-    
-      <div class="post py3">
-        <a href="/2015/10/11/hello3" class="post-link"><h3 class="h1 post-title">Hello3</h3></a>
-		 <p class="post-meta">11 Oct 2015</p>
-         <p class="post-summary">
-          
-            
+    sendButton.addEventListener('click', function(event){
+      event.preventDefault();
 
-          
-        </p>
-		<br />
-      </div>
-    
-      <div class="post py3">
-        <a href="/2015/10/11/hello2" class="post-link"><h3 class="h1 post-title">Hello2</h3></a>
-		 <p class="post-meta">11 Oct 2015</p>
-         <p class="post-summary">
-          
-            
+      sendButton.innerHTML = 'sending..';
 
-          
-        </p>
-		<br />
-      </div>
-    
-      <div class="post py3">
-        <a href="/2015/10/11/-" class="post-link"><h3 class="h1 post-title">مرحبا تاني</h3></a>
-		 <p class="post-meta">11 Oct 2015</p>
-         <p class="post-summary">
-          
-            
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', '//formspree.io/', true);
+      xhr.setRequestHeader("Accept", "application/json")
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
 
-          
-        </p>
-		<br />
-      </div>
-    
-      <div class="post py3">
-        <a href="/2015/10/11/" class="post-link"><h3 class="h1 post-title">مرحبا</h3></a>
-		 <p class="post-meta">11 Oct 2015</p>
-         <p class="post-summary">
-          
-            
-<h2 id="section">مرحبا ياسطا منور عالطلاق</h2>
+      xhr.send(
+        "email=" + inputEmail.value +
+        "&message=" + textAreaMessage.value);
 
+      xhr.onloadend = function (res) {
+        if (res.target.status === 200){
+          sendButton.innerHTML = 'Message sent!';
+        }
+        else {
+          sendButton.innerHTML = 'Error!';
+        }
+      }
+    });
+</script>
 
-          
-        </p>
-		<br />
-      </div>
-    
-  </div>
 
   </div>
 </div>
