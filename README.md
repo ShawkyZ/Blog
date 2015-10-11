@@ -1,5 +1,5 @@
 ## My Personal Blog
-Blog Link:  https://shawkyz.info.
+Blog Link:  http://shawkyz.info.
 
 This Blog is built on top of Jekyll.
 
