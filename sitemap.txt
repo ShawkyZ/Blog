@@ -8,8 +8,4 @@ http://shawkyz.info/sitemap.txt
 http://shawkyz.info/tags.html
 http://shawkyz.info/thanks.html
 
-http://shawkyz.info/2015/10/11/hello4
-http://shawkyz.info/2015/10/11/hello3
-http://shawkyz.info/2015/10/11/hello2
-http://shawkyz.info/2015/10/11/-
-http://shawkyz.info/2015/10/11/
+http://shawkyz.info/2015/10/11/---backup--mssql-database--c
