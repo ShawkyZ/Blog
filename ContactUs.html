@@ -1,0 +1,16 @@
+---
+layout: page
+title : تواصل معي
+header : تواصل معي
+group: navigation
+---
+<form role="form" action="https://formspree.io/{{ site.author.email }}" method="POST">
+ <div class="form-group">
+      <input type="text" name="email" class="form-control"  placeholder="Email Address">
+      <textarea type="text" name="content" class="form-control" rows="5" placeholder="محتوى الرسالة"></textarea>
+      <input type="hidden" name="_next" value="{{ site.baseurl }}/thanks/" />
+      <input type="hidden" name="_subject" value="New submission!" />
+      <input type="text" name="_gotcha" style="display:none" />
+      <input type="submit" class="btn btn-default" value="Say Hello">
+  </div>
+  </form>
