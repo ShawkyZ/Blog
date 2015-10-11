@@ -4,7 +4,7 @@
  <title>مدونة شوقي</title>
  <link href="http://shawkyz.info/atom.xml" rel="self"/>
  <link href="http://shawkyz.info"/>
- <updated>2015-10-11T21:38:10+02:00</updated>
+ <updated>2015-10-11T23:13:23+02:00</updated>
  <id>http://shawkyz.info</id>
  <author>
    <name>Abdelrhman Shawky</name>
@@ -18,7 +18,7 @@
    <updated>2015-10-11T00:00:00+02:00</updated>
    <id>http://shawkyz.info/2015/10/11/---backup--mssql-database--c</id>
    <content type="html">
-&lt;p&gt;&lt;img src=&quot;/assets/database-backup-ic59flemi_emresupcin.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/database-backup-ic59flemi_emresupcin.png&quot; alt=&quot;&quot; class=&quot;img-responsive center-block&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ازاي تاخد Database Backup من البرنامج بتاعك و ازاي تعمل Restore&lt;/p&gt;
 
