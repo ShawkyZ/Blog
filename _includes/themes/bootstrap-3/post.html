@@ -10,9 +10,6 @@
     <div class="post-content">
       {{ content }}
     </div>
- {% if site.show_sharing_icons %}
-  {% include share_buttons.html %}
-  {% endif %}
   {% unless page.categories == empty %}
     <ul class="tag_box inline">
       <li><i class="glyphicon glyphicon-open"></i></li>
@@ -28,6 +25,10 @@
       {% include JB/tags_list %}
     </ul>
   {% endunless %}  
+ 
+ {% if site.show_sharing_icons %}
+  {% include share_buttons.html %}
+  {% endif %}
  
     <hr>
     <ul class="pagination">
