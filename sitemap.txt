@@ -8,4 +8,5 @@ http://shawkyz.info/sitemap.txt
 http://shawkyz.info/tags.html
 http://shawkyz.info/thanks.html
 
-http://shawkyz.info/2015/10/11/---backup--mssql-database--c
+http://shawkyz.info/2015/02/17/host-aspnet-on-linux
+http://shawkyz.info/2014/02/23/---backup--mssql-database--c

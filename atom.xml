@@ -4,7 +4,7 @@
  <title>مدونة شوقي</title>
  <link href="http://shawkyz.info/atom.xml" rel="self"/>
  <link href="http://shawkyz.info"/>
- <updated>2015-10-11T23:13:23+02:00</updated>
+ <updated>2015-10-17T14:24:54+02:00</updated>
  <id>http://shawkyz.info</id>
  <author>
    <name>Abdelrhman Shawky</name>
@@ -13,10 +13,147 @@
 
  
  <entry>
+   <title>Host ASP.Net WebApps On Linux</title>
+   <link href="http://shawkyz.info/2015/02/17/host-aspnet-on-linux"/>
+   <updated>2015-02-17T00:00:00+02:00</updated>
+   <id>http://shawkyz.info/2015/02/17/host-aspnet-on-linux</id>
+   <content type="html">
+&lt;p&gt;&lt;img src=&quot;/assets/HighlightsvNext.png&quot; alt=&quot;&quot; class=&quot;img-responsive center-block&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;تكمن المشكلة في إنشاء موقع إلكتروني على الإنترنت في الإستضافة الخاصة بالموقع والتي تأتيك بين أحد الإختيارات التالية:&lt;/p&gt;
+
+&lt;p&gt;إستضافة Windows أم إستضافة Linux&lt;/p&gt;
+
+&lt;p&gt;وهل العميل على إستعداد للدفع مقابل هذه الإستضافة، وهذا كان هو التحدى لإي مبرمج يعمل بـ لغة ASP البرمجية لإنشاء وبرمجة المواقع&lt;/p&gt;
+
+&lt;p&gt;اليوم وبعد أن أصبح لدينا ASP vNext والذي أصبح منتح مفتوح المصدر بالكامل أصبح لدينا خوادم غير الـ IIS والتي كانت لا تعمل إلّا على خوادم Windows فقط&lt;/p&gt;
+
+&lt;p&gt;لم نكن نحلم في يوم من الأيام أن نستطيع عمل ASP.NET WebApp ونقوم بإنشاء إستضافة خاصة به على خادم Linux&lt;/p&gt;
+
+&lt;p&gt;الآن أصبح الأمر ممكنًا ومتاح للجميع، فمنذ فترة أعلنت شركة Microsoft عن ASP.NET vNext وأطلقت عليه الآن “ASP.Net 5” ويمكنك تطوير موقع كامل على خادم OSX و Linux ويمكنك إستضافة الموقع عليه&lt;/p&gt;
+
+&lt;p&gt;كيف يمكننا فعل ذلك؟ وماذا حدث بالظبط، وما هي الخطوات التي يجب أن اتخذها وما هي الـ vNext ؟&lt;/p&gt;
+
+&lt;p&gt;مبدأيًا: الـ ASP vNext جميعها مفتوحة المصدر يمكنك التعديل عليها بالكامل كما تحب وقراءة ومشاهدة الكود المصدري، بالإضافة إلى إرسال إقتراحات لـ شركة مايكروسوفت خاصة بتعديلاتك.&lt;/p&gt;
+
+&lt;p&gt;سوف تجد الـ repo على GitHub من هنا:&lt;/p&gt;
+
+&lt;p&gt;https://github.com/aspnet/home&lt;/p&gt;
+
+&lt;p&gt;يذكر أنّ شركة مايكروسوفت في الآونة الأخيرة بدأت تتحد مع فريق Mono فيمكننا في الفترة القادمة توقع ان اي تحديثات خاصة بالـ .NET سوف نجدها في الحال على Mono ولن نضطر للإنتظار بعد الآن بالإضافة إلى إن Mono كـ IDE سوف تتحسن بصورة كبيرة.&lt;/p&gt;
+
+&lt;p&gt;ما تم في في ASP vNext كان ببساطة نقلة تاريخية لعدة أسباب:&lt;/p&gt;
+
+&lt;p&gt;١- الـ CSharp Compiler موجود مفتوح المصدر تحت اسم Roslyn.&lt;/p&gt;
+
+&lt;p&gt;٢- لسنا بحاجة إلى إستخدام الـ IIS Web Server بعد الآن فقد أصبح هناك  Kestrel وبسببه يمكننا إستضافة المواقع على خوادم تعمل بـ Linux وكذلك OSX.&lt;/p&gt;
+
+&lt;p&gt;٣- أصبح الآن كل شئ على Nuget.&lt;/p&gt;
+
+&lt;p&gt;٤- بعد أن كان لدينا ملفين في المشروع الواحد، ملف خاص بملفات المشروع والثاني خاص بـ Nuget Packages أصبح الاثنين في ملف واحد تحت اسم Project.json&lt;/p&gt;
+
+&lt;p&gt;في هذه التدوينة سوف نتكلم عن كيف تبرمج Website بـاستخدام ASP vNext و و ما هي الخطوات اللازمة حتى تستضيف الموقع على Linux Machine ،الامثلة القادمة ستكون مرتبطة بتوزيعات لينكس المبنية على Debian.&lt;/p&gt;
+
+&lt;p&gt;مبدأيًا لكي تبرمجASP.Net Website على الويندوز فمن الممكن ان تستعملVisual Studio 2015 و هذا أسهل حل .. أيضًا ، من الممكن ان تستعمل اي محرر أخر.&lt;/p&gt;
+
+&lt;p&gt;فلنفترض الآن انك انتهيت من برمجة ال Website بالكامل و تريد استضافته على أحد خوادم Linux فما هي الخطوات اللازمة لذلك؟&lt;/p&gt;
+
+&lt;p&gt;اذا كنت تعتقد ان الخطوات القادمة من الصعب تنفيذها فلا تقلق ، فقد جهزنا لك Script سوف يقوم بكل هذه المهام من تلقاء نفسه.&lt;/p&gt;
+
+&lt;p&gt;1- تحتاج الى Mono و يكون أعلى من 3.4.1:&lt;/p&gt;
+
+&lt;p&gt;اكتب هذه الاوامر في ال Terminal لتحميل و تنصيب Mono 3.8.0&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;essential&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;wget&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//download.mono-project.com/sources/mono/mono-3.8.0.tar.bz2&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xvf&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mono&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;3.8.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bz2&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mono&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;3.8.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;configure&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;–&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prefix&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;local&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;make&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;make&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;2- نحتاج الى تحميل SSL Certificates خاصة بميكروسوفت:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;certmgr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ssl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//go.microsoft.com&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;certmgr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ssl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//nugetgallery.blob.core.windows.net&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;certmgr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ssl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//nuget.org&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;certmgr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ssl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//www.myget.org/F/aspnetvnext/&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;mozroots&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;–&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;–&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sync&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;3- نحتاج الى KVM و KRE :&lt;/p&gt;
+
+&lt;p&gt;*اكتب ال UserName الخاص بـ السيرفر مكان {USER NAME}&lt;/p&gt;
+
+&lt;p&gt;(KRE (K Runtime Enviroment) , KVM (K Version Manager&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;curl&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;curl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sSL&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//raw.githubusercontent.com/aspnet/Home/master/kvminstall.sh | sh &amp;amp;&amp;amp; source ~/.kre/kvm/kvm.sh&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;USER&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kre&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kvm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kvm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sh&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;kvm&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;upgrade&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;4- الآن كل ما نحتاجه لتشغيل Kestrel Web Server اصبح جاهز ، و لكن Kestrel يعتمد على libuv فيجب تنصيبها له:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gyp&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;wget&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//dist.libuv.org/dist/v1.0.0-rc2/libuv-v1.0.0-rc2.tar.gz&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xvf&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;libuv&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v1&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;.0.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rc2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gz&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;libuv&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v1&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;.0.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rc2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gyp_uv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;make&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Duv_library&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shared_library&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;make&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cp&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Debug&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;libuv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;so&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lib&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;libuv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;so&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;.1.0.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rc2&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ln&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;libuv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;so&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;.1.0.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rc2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lib&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;libuv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;so&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;.1&lt;/span&gt;
+
+&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;تحميل&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Template&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;جاهز&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;حتى&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;نتأكد&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;ان&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;كل&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;الخطوات&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;السابقة&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;تمت&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;بطريقة&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;صحيحة&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;git&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clone&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//github.com/aspnet/home&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;samples&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HelloMvc&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;kpm&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;restore&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;kpm&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;build&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;من الممكن عمل build من خلال الأمر kpm build ، او اذا كنت تريد ان تشغل الserver نكتب k kestrel&lt;/p&gt;
+
+&lt;p&gt;الان لو كتبت k kestrel و رايت الرسالة Started اذا فمن الممكن تعاين الموقع من خلال الbrowser ادخل على&lt;/p&gt;
+
+&lt;p&gt;http://localhost:5004&lt;/p&gt;
+
+&lt;p&gt;ملحوظة: يتم كتابة الاوامر مثل k kestrel او kpm build بداخل ال Directory الخاصة بالموقع.&lt;/p&gt;
+
+&lt;p&gt;*اذا كنت لا تريد القيام بكل هذه الخطوات من الممكن تحميل ال Script:&lt;/p&gt;
+
+&lt;p&gt;https://gist.github.com/ShawkyZ/0b3831329a0372e33aef#file-kestrel-configuration&lt;/p&gt;
+
+&lt;p&gt;*اذا كنت تريد ان تستضيف ال Site على Azure VM مثلًا ، فمن الممكن ان تنشئ واحدة و تستخدم (Putty) مثلًا لكي تتصل بها و تبدأ بعمل كل الخطوات السابقة و عند الانتهاء لا تنسى ان تضبط اعدادات ال EndPoint الخاصة بال VM.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
    <title>حفظ و استعادة Backup ف MSSQL Database بال #C</title>
-   <link href="http://shawkyz.info/2015/10/11/---backup--mssql-database--c"/>
-   <updated>2015-10-11T00:00:00+02:00</updated>
-   <id>http://shawkyz.info/2015/10/11/---backup--mssql-database--c</id>
+   <link href="http://shawkyz.info/2014/02/23/---backup--mssql-database--c"/>
+   <updated>2014-02-23T00:00:00+02:00</updated>
+   <id>http://shawkyz.info/2014/02/23/---backup--mssql-database--c</id>
    <content type="html">
 &lt;p&gt;&lt;img src=&quot;/assets/database-backup-ic59flemi_emresupcin.png&quot; alt=&quot;&quot; class=&quot;img-responsive center-block&quot; /&gt;&lt;/p&gt;
 
