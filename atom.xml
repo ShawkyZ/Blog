@@ -4,7 +4,7 @@
  <title>مدونة شوقي</title>
  <link href="http://shawkyz.info/atom.xml" rel="self"/>
  <link href="http://shawkyz.info"/>
- <updated>2016-04-16T17:55:17+02:00</updated>
+ <updated>2016-04-16T18:53:41+02:00</updated>
  <id>http://shawkyz.info</id>
  <author>
    <name>Abdelrhman Shawky</name>
@@ -110,7 +110,7 @@
 &lt;ul&gt;
   &lt;li&gt;الاول تشوف ال File Type اللي جاي و لو مش موجود في ال Whitelist بتاعتك متقبلوش.&lt;/li&gt;
   &lt;li&gt;التاني هتشوف ال File Signature ، كل File Type بيكون ليه FIle Signature معينة بتكون في اول 20 byte منه 
-ممكن تشوفهم من هنا : https://en.wikipedia.org/wiki/List_of_file_signatures 
+&lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_file_signatures&quot;&gt;ممكن تشوفهم من هنا&lt;/a&gt;
 فبرضه هتعمل Whitelist بال File Signatures اللي هتقبلها و تcheck لو كان ال File اللي جاي ده ال signature بتاعته موجودة في ال Whitelist ولا لأ بانك هتقرا اول 20 byte من ال File ، ده عشان مثلًا لو ال user غير ال extension بتاع ال exe file لـ txt مثلا ، في العادي دي مش مشكلة طلاما هو مش executable و محدش هيعمله execute، بس فرضًا لو كان فيه اي flow عندك تخليه يغير اسم ال file مثلا فساعتها ممكن تبقى مشكلة.
 عامة  “Better Safe Than Sorry”.&lt;/li&gt;
 &lt;/ul&gt;
