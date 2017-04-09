@@ -1,0 +1,14 @@
+
+http://shawkyz.info/ContactUs
+http://shawkyz.info/archive
+http://shawkyz.info/atom.xml
+http://shawkyz.info/
+http://shawkyz.info/rss.xml
+http://shawkyz.info/sitemap.txt
+http://shawkyz.info/tags
+http://shawkyz.info/thanks
+
+http://shawkyz.info/2017/04/08/BotFramework
+http://shawkyz.info/2016/04/16/ASP-Security
+http://shawkyz.info/2015/02/17/host-aspnet-on-linux
+http://shawkyz.info/2014/02/23/backup-mssql-database-c
