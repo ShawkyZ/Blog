@@ -13,18 +13,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap styles -->
-    <link href="/assets/themes//bootstrap-3/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/assets/themes//bootstrap-3/bootstrap/css/bootstrap-flipped.css" rel="stylesheet">
-	<link href="/assets/themes//bootstrap-3/bootstrap/css/bootstrap-rtl.min.css" rel="stylesheet">
+    <link href="/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/themes/bootstrap-3/bootstrap/css/bootstrap-rtl.min.css" rel="stylesheet">
+	<link href="/assets/themes/bootstrap-3/bootstrap/css/bootstrap-flipped.css" rel="stylesheet">
     <!-- Optional theme -->
-    <link href="/assets/themes//bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/assets/themes/bootstrap-3/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
     <!-- Sticky Footer -->
-    <link href="/assets/themes//bootstrap/css/bs-sticky-footer.css" rel="stylesheet">
+    <link href="/assets/themes/bootstrap-3/bootstrap/css/bs-sticky-footer.css" rel="stylesheet">
     
       <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     
     <!-- Custom styles -->
-    <link href="/assets/themes//css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/themes/bootstrap-3/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -76,7 +76,7 @@
     
       
       	
-      	<li><a href="/ContactUs">تواصل معي</a></li>
+      	<li><a href="/ContactUs.html">تواصل معي</a></li>
       	
       
     
@@ -84,7 +84,7 @@
     
       
       	
-      	<li><a href="/archive">الأرشيف</a></li>
+      	<li><a href="/archive.html">الأرشيف</a></li>
       	
       
     
@@ -108,7 +108,7 @@
     
       
       	
-      	<li><a href="/tags">Tags</a></li>
+      	<li><a href="/tags.html">Tags</a></li>
       	
       
     
@@ -141,7 +141,7 @@
     <div class="date">
       <span>23 Feb 2014</span>
     </div>
-    <div class="post-content col-xs-8" style="font-size: 17px">
+    <div class="post-content">
       
 <p><img src="/assets/database-backup-ic59flemi_emresupcin.png" alt="" class="img-responsive center-block" /></p>
 
@@ -153,7 +153,7 @@
 
 <p>هنكتب الامر ده ف ال SQL</p>
 
-<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">BACKUP</span> <span class="n">DATABASE</span> <span class="n">TestDB</span> <span class="n">TO</span> <span class="n">DISK</span> <span class="o">=</span><span class="err">'</span><span class="n">C</span><span class="o">:</span><span class="err">\</span><span class="n">TestDB</span><span class="p">.</span><span class="n">bak</span><span class="err">'</span></code></pre></figure>
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">BACKUP</span> <span class="n">DATABASE</span> <span class="n">TestDB</span> <span class="n">TO</span> <span class="n">DISK</span> <span class="o">=</span><span class="err">&#39;</span><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">TestDB</span><span class="p">.</span><span class="n">bak</span><span class="err">&#39;</span></code></pre></div>
 
 <p>طيب نعملها ازاي ف ال App بتاعنا</p>
 
@@ -171,33 +171,33 @@
 
 <p>ده هيكون code ال button click</p>
 
-<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">private</span> <span class="kt">void</span> <span class="nf">button6_Click</span><span class="p">(</span><span class="n">object</span> <span class="n">sender</span><span class="p">,</span> <span class="n">EventArgs</span> <span class="n">e</span><span class="p">)</span>
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">private</span> <span class="kt">void</span> <span class="nf">button6_Click</span><span class="p">(</span><span class="n">object</span> <span class="n">sender</span><span class="p">,</span> <span class="n">EventArgs</span> <span class="n">e</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="n">folderBrowserDialog1</span><span class="p">.</span><span class="n">ShowDialog</span><span class="p">();</span>
 <span class="n">string</span> <span class="n">path</span> <span class="o">=</span> <span class="n">folderBrowserDialog1</span><span class="p">.</span><span class="n">SelectedPath</span><span class="p">;</span>
-<span class="k">if</span><span class="p">(</span><span class="n">path</span><span class="o">!=</span><span class="s">""</span><span class="p">)</span>
+<span class="k">if</span><span class="p">(</span><span class="n">path</span><span class="o">!=</span><span class="s">&quot;&quot;</span><span class="p">)</span>
 <span class="p">{</span>
  
 <span class="n">db</span><span class="p">.</span><span class="n">BackUpDB</span><span class="p">(</span><span class="n">path</span><span class="p">);</span>
-<span class="n">MessageBox</span><span class="p">.</span><span class="n">Show</span><span class="p">(</span><span class="s">"تم الحفظ بنجاح"</span><span class="p">);</span>
+<span class="n">MessageBox</span><span class="p">.</span><span class="n">Show</span><span class="p">(</span><span class="s">&quot;تم الحفظ بنجاح&quot;</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="k">else</span> <span class="p">{</span> <span class="n">MessageBox</span><span class="p">.</span><span class="n">Show</span><span class="p">(</span><span class="s">"خطأ في الحفظ"</span><span class="p">);</span> <span class="p">}</span>
-<span class="p">}</span></code></pre></figure>
+<span class="k">else</span> <span class="p">{</span> <span class="n">MessageBox</span><span class="p">.</span><span class="n">Show</span><span class="p">(</span><span class="s">&quot;خطأ في الحفظ&quot;</span><span class="p">);</span> <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
 
 <p>ببساطة باخد منه ال path و بديه لل BackUpDB Function</p>
 
 <p>ايه اللي بيحصل ف ال BackUpDB Function بقى</p>
 
-<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">public</span> <span class="kt">void</span> <span class="nf">BackUpDB</span><span class="p">(</span><span class="n">string</span> <span class="n">path</span><span class="p">)</span>
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">public</span> <span class="kt">void</span> <span class="nf">BackUpDB</span><span class="p">(</span><span class="n">string</span> <span class="n">path</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="n">con</span><span class="p">.</span><span class="n">Open</span><span class="p">();</span>
-<span class="n">SqlCommand</span> <span class="n">cm</span> <span class="o">=</span> <span class="n">new</span> <span class="n">SqlCommand</span><span class="p">(</span><span class="s">"USE master"</span><span class="p">,</span> <span class="n">con</span><span class="p">);</span>
+<span class="n">SqlCommand</span> <span class="n">cm</span> <span class="o">=</span> <span class="n">new</span> <span class="n">SqlCommand</span><span class="p">(</span><span class="s">&quot;USE master&quot;</span><span class="p">,</span> <span class="n">con</span><span class="p">);</span>
 <span class="n">cm</span><span class="p">.</span><span class="n">ExecuteNonQuery</span><span class="p">();</span>
-<span class="n">SqlCommand</span> <span class="n">cmd</span> <span class="o">=</span> <span class="n">new</span> <span class="n">SqlCommand</span><span class="p">(</span><span class="s">"BACKUP DATABASE TestDB TO DISK = '"</span> <span class="o">+</span> <span class="n">path</span> <span class="o">+</span> <span class="s">"</span><span class="se">\\</span><span class="s">TestDB"</span> <span class="o">+</span><span class="n">DateTime</span><span class="p">.</span><span class="n">Now</span><span class="p">.</span><span class="n">ToShortDateString</span><span class="p">().</span><span class="n">Replace</span><span class="p">(</span><span class="sc">'/'</span><span class="p">,</span><span class="sc">'-'</span><span class="p">)</span> <span class="o">+</span> <span class="s">".bak'"</span><span class="p">,</span> <span class="n">con</span><span class="p">);</span>
+<span class="n">SqlCommand</span> <span class="n">cmd</span> <span class="o">=</span> <span class="n">new</span> <span class="n">SqlCommand</span><span class="p">(</span><span class="s">&quot;BACKUP DATABASE TestDB TO DISK = &#39;&quot;</span> <span class="o">+</span> <span class="n">path</span> <span class="o">+</span> <span class="s">&quot;</span><span class="se">\\</span><span class="s">TestDB&quot;</span> <span class="o">+</span><span class="n">DateTime</span><span class="p">.</span><span class="n">Now</span><span class="p">.</span><span class="n">ToShortDateString</span><span class="p">().</span><span class="n">Replace</span><span class="p">(</span><span class="sc">&#39;/&#39;</span><span class="p">,</span><span class="sc">&#39;-&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;.bak&#39;&quot;</span><span class="p">,</span> <span class="n">con</span><span class="p">);</span>
  
 <span class="n">cmd</span><span class="p">.</span><span class="n">ExecuteNonQuery</span><span class="p">();</span>
 <span class="n">con</span><span class="p">.</span><span class="n">Close</span><span class="p">();</span>
-<span class="p">}</span></code></pre></figure>
+<span class="p">}</span></code></pre></div>
 
 <p>طيب دلوقتي انا عايز اعمل restore</p>
 
@@ -211,7 +211,7 @@
 
 <p>3-هعمل Restore With Replace بأمر زي ده كده</p>
 
-<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">RESTORE</span> <span class="n">DATABASE</span> <span class="n">TestDB</span> <span class="n">FROM</span> <span class="n">DISK</span><span class="o">=</span><span class="err">’</span><span class="n">C</span><span class="o">:</span><span class="err">\</span><span class="n">TestDB</span><span class="p">.</span><span class="n">bak</span><span class="err">’</span> <span class="n">With</span> <span class="n">Replace</span></code></pre></figure>
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">RESTORE</span> <span class="n">DATABASE</span> <span class="n">TestDB</span> <span class="n">FROM</span> <span class="n">DISK</span><span class="o">=</span><span class="err">’</span><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">TestDB</span><span class="p">.</span><span class="n">bak</span><span class="err">’</span> <span class="n">With</span> <span class="n">Replace</span></code></pre></div>
 
 <p>4- هرجع ال database بتاعتي تاني Multi_User</p>
 
@@ -225,56 +225,56 @@
 
 <p>دلوقتي لما ال user يدوس على button عشان يفتح ال SaveFileDialog هاخد ال FileName من ال SaveFileDialog ده و هبعته للـFunction</p>
 
-<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">private</span> <span class="kt">void</span> <span class="nf">button7_Click</span><span class="p">(</span><span class="n">object</span> <span class="n">sender</span><span class="p">,</span> <span class="n">EventArgs</span> <span class="n">e</span><span class="p">)</span>
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">private</span> <span class="kt">void</span> <span class="nf">button7_Click</span><span class="p">(</span><span class="n">object</span> <span class="n">sender</span><span class="p">,</span> <span class="n">EventArgs</span> <span class="n">e</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="n">openFileDialog2</span><span class="p">.</span><span class="n">Filter</span> <span class="o">=</span> <span class="s">"Backup File (*.bak)|*.bak"</span><span class="p">;</span>
+<span class="n">openFileDialog2</span><span class="p">.</span><span class="n">Filter</span> <span class="o">=</span> <span class="s">&quot;Backup File (*.bak)|*.bak&quot;</span><span class="p">;</span>
 <span class="n">openFileDialog2</span><span class="p">.</span><span class="n">FileName</span> <span class="o">=</span> <span class="n">null</span><span class="p">;</span>
 <span class="n">openFileDialog2</span><span class="p">.</span><span class="n">ShowDialog</span><span class="p">();</span>
 <span class="n">string</span> <span class="n">path</span> <span class="o">=</span> <span class="n">openFileDialog2</span><span class="p">.</span><span class="n">FileName</span><span class="p">;</span>
-<span class="k">if</span> <span class="p">(</span><span class="n">path</span> <span class="o">!=</span> <span class="s">""</span><span class="p">)</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">path</span> <span class="o">!=</span> <span class="s">&quot;&quot;</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="n">try</span>
 <span class="p">{</span>
 <span class="n">db</span><span class="p">.</span><span class="n">RestoreDB</span><span class="p">(</span><span class="n">path</span><span class="p">);</span>
-<span class="n">MessageBox</span><span class="p">.</span><span class="n">Show</span><span class="p">(</span><span class="s">"تم "</span><span class="p">);</span>
+<span class="n">MessageBox</span><span class="p">.</span><span class="n">Show</span><span class="p">(</span><span class="s">&quot;تم &quot;</span><span class="p">);</span>
 <span class="n">Application</span><span class="p">.</span><span class="n">Restart</span><span class="p">();</span>
 <span class="p">}</span>
-<span class="n">catch</span> <span class="p">{</span> <span class="n">MessageBox</span><span class="p">.</span><span class="n">Show</span><span class="p">(</span><span class="s">"خطأ"</span><span class="p">);</span> <span class="p">}</span>
+<span class="n">catch</span> <span class="p">{</span> <span class="n">MessageBox</span><span class="p">.</span><span class="n">Show</span><span class="p">(</span><span class="s">&quot;خطأ&quot;</span><span class="p">);</span> <span class="p">}</span>
 <span class="p">}</span>
 <span class="k">else</span>
 <span class="p">{</span>
-<span class="n">MessageBox</span><span class="p">.</span><span class="n">Show</span><span class="p">(</span><span class="s">"خطأ في الاسترجاع"</span><span class="p">);</span>
+<span class="n">MessageBox</span><span class="p">.</span><span class="n">Show</span><span class="p">(</span><span class="s">&quot;خطأ في الاسترجاع&quot;</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="p">}</span></code></pre></figure>
+<span class="p">}</span></code></pre></div>
 
 <p>و ده اللي بيحصل جوة ال Function بتاعت RestoreDB</p>
 
-<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">public</span> <span class="kt">void</span> <span class="nf">RestoreDB</span><span class="p">(</span><span class="n">string</span> <span class="n">path</span><span class="p">)</span>
+<div class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">public</span> <span class="kt">void</span> <span class="nf">RestoreDB</span><span class="p">(</span><span class="n">string</span> <span class="n">path</span><span class="p">)</span>
 <span class="p">{</span>
  
 <span class="n">con</span><span class="p">.</span><span class="n">Open</span><span class="p">();</span>
-<span class="n">SqlCommand</span> <span class="n">cm</span> <span class="o">=</span> <span class="n">new</span> <span class="n">SqlCommand</span><span class="p">(</span><span class="s">"USE master"</span><span class="p">,</span> <span class="n">con</span><span class="p">);</span>
+<span class="n">SqlCommand</span> <span class="n">cm</span> <span class="o">=</span> <span class="n">new</span> <span class="n">SqlCommand</span><span class="p">(</span><span class="s">&quot;USE master&quot;</span><span class="p">,</span> <span class="n">con</span><span class="p">);</span>
 <span class="n">cm</span><span class="p">.</span><span class="n">ExecuteNonQuery</span><span class="p">();</span>
-<span class="n">string</span> <span class="n">Alter1</span> <span class="o">=</span> <span class="err">@</span><span class="s">"ALTER DATABASE [TestDB] SET Single_User WITH Rollback Immediate"</span><span class="p">;</span>
+<span class="n">string</span> <span class="n">Alter1</span> <span class="o">=</span> <span class="err">@</span><span class="s">&quot;ALTER DATABASE [TestDB] SET Single_User WITH Rollback Immediate&quot;</span><span class="p">;</span>
 <span class="n">SqlCommand</span> <span class="n">Alter1Cmd</span> <span class="o">=</span> <span class="n">new</span> <span class="n">SqlCommand</span><span class="p">(</span><span class="n">Alter1</span><span class="p">,</span> <span class="n">con</span><span class="p">);</span>
 <span class="n">Alter1Cmd</span><span class="p">.</span><span class="n">ExecuteNonQuery</span><span class="p">();</span>
 <span class="n">try</span>
 <span class="p">{</span>
-<span class="n">SqlCommand</span> <span class="n">cmd</span> <span class="o">=</span> <span class="n">new</span> <span class="n">SqlCommand</span><span class="p">(</span><span class="s">"RESTORE DATABASE TestDB FROM DISK='"</span> <span class="o">+</span> <span class="n">path</span> <span class="o">+</span> <span class="s">"' With Replace"</span><span class="p">,</span> <span class="n">con</span><span class="p">);</span>
+<span class="n">SqlCommand</span> <span class="n">cmd</span> <span class="o">=</span> <span class="n">new</span> <span class="n">SqlCommand</span><span class="p">(</span><span class="s">&quot;RESTORE DATABASE TestDB FROM DISK=&#39;&quot;</span> <span class="o">+</span> <span class="n">path</span> <span class="o">+</span> <span class="s">&quot;&#39; With Replace&quot;</span><span class="p">,</span> <span class="n">con</span><span class="p">);</span>
 <span class="n">cmd</span><span class="p">.</span><span class="n">ExecuteNonQuery</span><span class="p">();</span>
 <span class="p">}</span>
 <span class="n">catch</span> <span class="p">{</span> <span class="p">}</span>
-<span class="n">string</span> <span class="n">Alter2</span> <span class="o">=</span> <span class="err">@</span><span class="s">"ALTER DATABASE [TestDB] SET Multi_User"</span><span class="p">;</span>
+<span class="n">string</span> <span class="n">Alter2</span> <span class="o">=</span> <span class="err">@</span><span class="s">&quot;ALTER DATABASE [TestDB] SET Multi_User&quot;</span><span class="p">;</span>
 <span class="n">SqlCommand</span> <span class="n">Alter2Cmd</span> <span class="o">=</span> <span class="n">new</span> <span class="n">SqlCommand</span><span class="p">(</span><span class="n">Alter2</span><span class="p">,</span> <span class="n">con</span><span class="p">);</span>
 <span class="n">Alter2Cmd</span><span class="p">.</span><span class="n">ExecuteNonQuery</span><span class="p">();</span>
 <span class="n">con</span><span class="p">.</span><span class="n">Close</span><span class="p">();</span>
-<span class="p">}</span></code></pre></figure>
+<span class="p">}</span></code></pre></div>
 
     </div>
     
 
   
-    <ul class="tag_box inline col-xs-12">
+    <ul class="tag_box inline">
       <li><i class="glyphicon glyphicon-tags"></i></li>
       
       
@@ -301,17 +301,17 @@
 
   <div class="pull-right share-links">
     
-      <a class = "fa fa-facebook" href="https://facebook.com/sharer.php?u=/2014/02/23/backup-mssql-database-c" rel="nofollow" target="_blank" title="Share on Facebook"></a>
+      <a class = "fa fa-facebook" href="https://facebook.com/sharer.php?u=/2014/02/23/---backup--mssql-database--c" rel="nofollow" target="_blank" title="Share on Facebook"></a>
     
 
     
-      <a class="fa fa-twitter" href="https://twitter.com/intent/tweet?text=حفظ و استعادة Backup ف MSSQL Database بال #C&url=/2014/02/23/backup-mssql-database-c" rel="nofollow" target="_blank" title="Share on Twitter"></a>
+      <a class="fa fa-twitter" href="https://twitter.com/intent/tweet?text=حفظ و استعادة Backup ف MSSQL Database بال #C&url=/2014/02/23/---backup--mssql-database--c" rel="nofollow" target="_blank" title="Share on Twitter"></a>
     
 
     
 
     
-      <a class="fa fa-linkedin" href="http://www.linkedin.com/shareArticle?url=/2014/02/23/backup-mssql-database-c&title=حفظ و استعادة Backup ف MSSQL Database بال #C" rel="nofollow" target="_blank" title="Share on LinkedIn"></a>
+      <a class="fa fa-linkedin" href="http://www.linkedin.com/shareArticle?url=/2014/02/23/---backup--mssql-database--c&title=حفظ و استعادة Backup ف MSSQL Database بال #C" rel="nofollow" target="_blank" title="Share on LinkedIn"></a>
     
 
     
@@ -330,8 +330,8 @@
 
   
  
-    
-    <ul class="pagination col-xs-12">
+    <hr>
+    <ul class="pagination">
     
       <li class="prev disabled"><a>&larr; Previous</a></li>
     
@@ -340,6 +340,7 @@
       <li class="next"><a href="/2015/02/17/host-aspnet-on-linux" title="Host ASP.Net WebApps On Linux">Next &raquo;</a></li>
     
     </ul>
+    <hr>
     
 
 
@@ -372,7 +373,7 @@
 <br/>
     <div class="footer">
       <div class="container">
-        <p><a href="http://github.com/ShawkyZ">2017 Abdelrhman Shawky &copy;</a>
+        <p><a href="http://github.com/ShawkyZ">2015 Abdelrhman Shawky &copy;</a>
         </p>
       </div>
     </div>
@@ -393,7 +394,7 @@
     <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="/assets/themes//bootstrap-3/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/themes/bootstrap-3/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
 
