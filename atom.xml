@@ -4,13 +4,38 @@
  <title>مدونة شوقي</title>
  <link href="http://shawkyz.info/atom.xml" rel="self"/>
  <link href="http://shawkyz.info"/>
- <updated>2017-04-09T02:29:41+02:00</updated>
+ <updated>2017-04-15T01:45:32+02:00</updated>
  <id>http://shawkyz.info</id>
  <author>
    <name>Abdelrhman Shawky</name>
    <email>abdelrhmanshawky4@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Building A Weather Bot Using LUIS and MS BotFramework</title>
+   <link href="http://shawkyz.info/2017/04/14/BotFramework2"/>
+   <updated>2017-04-14T00:00:00+02:00</updated>
+   <id>http://shawkyz.info/2017/04/14/BotFramework2</id>
+   <content type="html">
+&lt;p&gt;&lt;img src=&quot;/assets/bot-framework-default-7.png&quot; alt=&quot;&quot; class=&quot;img-responsive center-block&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+في الفيديو ده بشرح ازاي تبني Weather Bot باستخدام ال Microsoft Bot Framework و Microsoft Cognitive Services, LUIS AI عشان تبدا انها تحلل ال User Queries و نعرف نتعامل معاها.&lt;/p&gt;
+
+&lt;p&gt;الbot اللي هيتعمل في الاخر بياخد queries من ال user كاسالة عن الجو بصورة مباشرة و غير مباشرة ، مثال :
+&lt;br /&gt;
+How is the weather like in Cairo?
+&lt;br /&gt;
+Should I wear a jacket tomorrow in London?
+&lt;br /&gt;
+و يبدا يفهم القصد منها و يحللها و يرد على الuser.
+&lt;br /&gt;&lt;/p&gt;
+&lt;iframe src=&quot;https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FShawkyz1%2Fvideos%2F10210474526432204%2F&amp;amp;width=800&amp;amp;show_text=false&amp;amp;appId=312241548925621&amp;amp;height=350&quot; width=&quot;800&quot; height=&quot;350&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Building A Simple Bot Using Microsoft Bot Framework</title>
