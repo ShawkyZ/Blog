@@ -1,4 +1,4 @@
-## Voyager
+##RTL Jekyll Blog Build on top of Voyager <https://github.com/redVi/voyager>
 
 Just another jekyll theme. Demo: <http://redvi.github.io/voyager>
 
