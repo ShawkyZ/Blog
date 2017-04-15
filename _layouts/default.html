@@ -1,6 +1,22 @@
 ---
-theme :
-  name : bootstrap-3
+layout: compress
 ---
-{% include JB/setup %}
-{% include themes/bootstrap-3/default.html %}
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+
+  {% include head.html %}
+
+  <body>
+    <div id="shadow"></div>
+
+      {% include header.html %}
+      {% include aside.html %}
+
+    <main class="content-wrapper">
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+</html>
