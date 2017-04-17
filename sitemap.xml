@@ -3,7 +3,7 @@
 
   
   <url>
-    <loc>http://shawkyz.info/posts/BotFramework2/</loc>
+    <loc>https://shawkyz.info/posts/BotFramework2/</loc>
     
       <lastmod>2017-04-14</lastmod>
     
@@ -12,7 +12,7 @@
   </url>
   
   <url>
-    <loc>http://shawkyz.info/posts/BotFramework/</loc>
+    <loc>https://shawkyz.info/posts/BotFramework/</loc>
     
       <lastmod>2017-04-08</lastmod>
     
@@ -21,7 +21,7 @@
   </url>
   
   <url>
-    <loc>http://shawkyz.info/posts/ASP-Security/</loc>
+    <loc>https://shawkyz.info/posts/ASP-Security/</loc>
     
       <lastmod>2016-04-16</lastmod>
     
@@ -30,7 +30,7 @@
   </url>
   
   <url>
-    <loc>http://shawkyz.info/posts/host-aspnet-on-linux/</loc>
+    <loc>https://shawkyz.info/posts/host-aspnet-on-linux/</loc>
     
       <lastmod>2015-02-17</lastmod>
     
@@ -39,7 +39,7 @@
   </url>
   
   <url>
-    <loc>http://shawkyz.info/posts/backup-mssql-database-c/</loc>
+    <loc>https://shawkyz.info/posts/backup-mssql-database-c/</loc>
     
       <lastmod>2014-02-23</lastmod>
     
@@ -63,7 +63,7 @@
   
     
     <url>
-      <loc>http://shawkyz.info/sitemap.xml</loc>
+      <loc>https://shawkyz.info/sitemap.xml</loc>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
     </url>

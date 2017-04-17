@@ -3,10 +3,10 @@
   <channel>
     <title>مدونة شوقي</title>
     <description>ShawkyZ Blog</description>
-    <link>http://shawkyz.info/</link>
-    <atom:link href="http://shawkyz.info/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 17 Apr 2017 02:48:13 +0200</pubDate>
-    <lastBuildDate>Mon, 17 Apr 2017 02:48:13 +0200</lastBuildDate>
+    <link>https://shawkyz.info/</link>
+    <atom:link href="https://shawkyz.info/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 17 Apr 2017 02:52:50 +0200</pubDate>
+    <lastBuildDate>Mon, 17 Apr 2017 02:52:50 +0200</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -26,8 +26,8 @@ Should I wear a jacket tomorrow in London?
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 14 Apr 2017 18:09:47 +0200</pubDate>
-        <link>http://shawkyz.info/posts/BotFramework2/</link>
-        <guid isPermaLink="true">http://shawkyz.info/posts/BotFramework2/</guid>
+        <link>https://shawkyz.info/posts/BotFramework2/</link>
+        <guid isPermaLink="true">https://shawkyz.info/posts/BotFramework2/</guid>
         
         <category>.Net</category>
         
@@ -51,8 +51,8 @@ Should I wear a jacket tomorrow in London?
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 08 Apr 2017 18:09:47 +0200</pubDate>
-        <link>http://shawkyz.info/posts/BotFramework/</link>
-        <guid isPermaLink="true">http://shawkyz.info/posts/BotFramework/</guid>
+        <link>https://shawkyz.info/posts/BotFramework/</link>
+        <guid isPermaLink="true">https://shawkyz.info/posts/BotFramework/</guid>
         
         <category>.Net</category>
         
@@ -218,8 +218,8 @@ Should I wear a jacket tomorrow in London?
 &lt;/blockquote&gt;
 </description>
         <pubDate>Sat, 16 Apr 2016 18:09:47 +0200</pubDate>
-        <link>http://shawkyz.info/posts/ASP-Security/</link>
-        <guid isPermaLink="true">http://shawkyz.info/posts/ASP-Security/</guid>
+        <link>https://shawkyz.info/posts/ASP-Security/</link>
+        <guid isPermaLink="true">https://shawkyz.info/posts/ASP-Security/</guid>
         
         <category>ASP.Net</category>
         
@@ -360,8 +360,8 @@ Should I wear a jacket tomorrow in London?
 
 </description>
         <pubDate>Tue, 17 Feb 2015 17:09:47 +0100</pubDate>
-        <link>http://shawkyz.info/posts/host-aspnet-on-linux/</link>
-        <guid isPermaLink="true">http://shawkyz.info/posts/host-aspnet-on-linux/</guid>
+        <link>https://shawkyz.info/posts/host-aspnet-on-linux/</link>
+        <guid isPermaLink="true">https://shawkyz.info/posts/host-aspnet-on-linux/</guid>
         
         <category>ASP.Net</category>
         
@@ -502,8 +502,8 @@ Should I wear a jacket tomorrow in London?
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 </description>
         <pubDate>Sun, 23 Feb 2014 17:09:47 +0100</pubDate>
-        <link>http://shawkyz.info/posts/backup-mssql-database-c/</link>
-        <guid isPermaLink="true">http://shawkyz.info/posts/backup-mssql-database-c/</guid>
+        <link>https://shawkyz.info/posts/backup-mssql-database-c/</link>
+        <guid isPermaLink="true">https://shawkyz.info/posts/backup-mssql-database-c/</guid>
         
         <category>db</category>
         
