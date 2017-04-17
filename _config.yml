@@ -12,7 +12,7 @@ description: ShawkyZ Blog
 baseurl: "" # the subpath of your site, e.g. /blog
 highlighter: rouge
 lang: "en"
-url: "http://shawkyz.info" # the base hostname & protocol for your site
+url: "https://shawkyz.info" # the base hostname & protocol for your site
 enforce_ssl: shawkyz.info
 twitter_username: "shawkyz1"
 facebook_username: "shawkyz1"
