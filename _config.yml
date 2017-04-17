@@ -13,6 +13,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 highlighter: rouge
 lang: "en"
 url: "http://shawkyz.info" # the base hostname & protocol for your site
+enforce_ssl: shawkyz.info
 twitter_username: "shawkyz1"
 facebook_username: "shawkyz1"
 linkedin_username: "shawkyz"
@@ -38,6 +39,5 @@ compress_html:
 sass:
   sass_dir: assets/_sass
   style: compressed
-
 
 images: '/assets/images'
