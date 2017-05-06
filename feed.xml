@@ -5,9 +5,36 @@
     <description>ShawkyZ Blog</description>
     <link>https://shawkyz.info/</link>
     <atom:link href="https://shawkyz.info/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 29 Apr 2017 16:42:19 +0200</pubDate>
-    <lastBuildDate>Sat, 29 Apr 2017 16:42:19 +0200</lastBuildDate>
+    <pubDate>Sat, 06 May 2017 16:27:49 +0200</pubDate>
+    <lastBuildDate>Sat, 06 May 2017 16:27:49 +0200</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Connecting a bot with RaspberryPi running Windows IoT Core.</title>
+        <description>&lt;p&gt;في الفيديو ده بشرح ازاي تربط ال Raspberry Pi بـ Bot معمول بـ Microsoft Bot Framework عشان يبدا يفهم امر معين من ال user زي مثلا “Turn the yellow led on”.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;iframe src=&quot;https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FShawkyz1%2Fvideos%2F10210678421969465%2F&amp;amp;width=800&amp;amp;show_text=false&amp;amp;appId=312241548925621&amp;amp;height=350&quot; width=&quot;800&quot; height=&quot;350&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 06 May 2017 18:09:47 +0200</pubDate>
+        <link>https://shawkyz.info/posts/ConnectBotWithRaspberryPi/</link>
+        <guid isPermaLink="true">https://shawkyz.info/posts/ConnectBotWithRaspberryPi/</guid>
+        
+        <category>.Net</category>
+        
+        <category>BotFramework</category>
+        
+        <category>RaspberryPi</category>
+        
+        <category>LUIS</category>
+        
+        
+        <category>posts</category>
+        
+      </item>
     
       <item>
         <title>Writing Multithreaded test to reproduce SQL Deadlocks.</title>
@@ -106,31 +133,6 @@ Should I wear a jacket tomorrow in London?
         <pubDate>Fri, 14 Apr 2017 18:09:47 +0200</pubDate>
         <link>https://shawkyz.info/posts/BotFramework2/</link>
         <guid isPermaLink="true">https://shawkyz.info/posts/BotFramework2/</guid>
-        
-        <category>.Net</category>
-        
-        <category>C#</category>
-        
-        <category>Bot</category>
-        
-        
-        <category>posts</category>
-        
-      </item>
-    
-      <item>
-        <title>Building A Simple Bot Using Microsoft Bot Framework</title>
-        <description>&lt;p&gt;في الفيديو ده بشرح ازاي تبني bot بسيط باستخدام ال Microsoft Bot Framework و Microsoft Cognitive Services.&lt;/p&gt;
-
-&lt;p&gt;الbot المفروض في الاخر ياخد الرسالة من الuser و يبعتها لل Cognitive Services تحللها و منها يعرف لو ال user متضايق مثلا او لا و على اساس كده ممكن يرد عليه رد معين.
-&lt;br /&gt;&lt;/p&gt;
-&lt;iframe src=&quot;https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FShawkyz1%2Fvideos%2F10210409987818779%2F&amp;amp;width=800&amp;amp;show_text=false&amp;amp;appId=312241548925621&amp;amp;height=350&quot; width=&quot;800&quot; height=&quot;350&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sat, 08 Apr 2017 18:09:47 +0200</pubDate>
-        <link>https://shawkyz.info/posts/BotFramework/</link>
-        <guid isPermaLink="true">https://shawkyz.info/posts/BotFramework/</guid>
         
         <category>.Net</category>
         
