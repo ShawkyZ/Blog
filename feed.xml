@@ -3,10 +3,10 @@
   <channel>
     <title>مدونة شوقي</title>
     <description>ShawkyZ Blog</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 11 Feb 2019 01:31:42 +0100</pubDate>
-    <lastBuildDate>Mon, 11 Feb 2019 01:31:42 +0100</lastBuildDate>
+    <link>https://shawkyz.info/</link>
+    <atom:link href="https://shawkyz.info/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 11 Feb 2019 01:39:09 +0100</pubDate>
+    <lastBuildDate>Mon, 11 Feb 2019 01:39:09 +0100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -43,8 +43,8 @@
 &lt;p&gt;&lt;a href=&quot;https://onionscan.org/&quot;&gt;https://onionscan.org/&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 26 Jan 2019 14:09:47 +0100</pubDate>
-        <link>http://localhost:4000/posts/TOR-Basics/</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/TOR-Basics/</guid>
+        <link>https://shawkyz.info/posts/TOR-Basics/</link>
+        <guid isPermaLink="true">https://shawkyz.info/posts/TOR-Basics/</guid>
         
         <category>TOR</category>
         
@@ -67,8 +67,8 @@
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 01 Jun 2018 18:09:47 +0200</pubDate>
-        <link>http://localhost:4000/posts/Roslyn/</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/Roslyn/</guid>
+        <link>https://shawkyz.info/posts/Roslyn/</link>
+        <guid isPermaLink="true">https://shawkyz.info/posts/Roslyn/</guid>
         
         <category>.Net</category>
         
@@ -103,8 +103,8 @@
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 18 Mar 2018 17:09:47 +0100</pubDate>
-        <link>http://localhost:4000/posts/BotFramework5/</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/BotFramework5/</guid>
+        <link>https://shawkyz.info/posts/BotFramework5/</link>
+        <guid isPermaLink="true">https://shawkyz.info/posts/BotFramework5/</guid>
         
         <category>.Net</category>
         
@@ -270,8 +270,8 @@
 &lt;/blockquote&gt;
 </description>
         <pubDate>Mon, 18 Dec 2017 17:09:47 +0100</pubDate>
-        <link>http://localhost:4000/posts/ASP-Security/</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/ASP-Security/</guid>
+        <link>https://shawkyz.info/posts/ASP-Security/</link>
+        <guid isPermaLink="true">https://shawkyz.info/posts/ASP-Security/</guid>
         
         <category>ASP.Net</category>
         
@@ -292,8 +292,8 @@
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 06 May 2017 18:09:47 +0200</pubDate>
-        <link>http://localhost:4000/posts/ConnectBotWithRaspberryPi/</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/ConnectBotWithRaspberryPi/</guid>
+        <link>https://shawkyz.info/posts/ConnectBotWithRaspberryPi/</link>
+        <guid isPermaLink="true">https://shawkyz.info/posts/ConnectBotWithRaspberryPi/</guid>
         
         <category>.Net</category>
         
