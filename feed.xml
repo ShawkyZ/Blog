@@ -3,33 +3,72 @@
   <channel>
     <title>مدونة شوقي</title>
     <description>ShawkyZ Blog</description>
-    <link>https://shawkyz.info/</link>
-    <atom:link href="https://shawkyz.info/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 03 Jun 2018 16:22:33 +0200</pubDate>
-    <lastBuildDate>Sun, 03 Jun 2018 16:22:33 +0200</lastBuildDate>
-    <generator>Jekyll v3.1.2</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 11 Feb 2019 01:31:42 +0100</pubDate>
+    <lastBuildDate>Mon, 11 Feb 2019 01:31:42 +0100</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>How To TOR</title>
+        <description>&lt;p&gt;In this video I’m talking about:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;How Tor Works&lt;/li&gt;
+  &lt;li&gt;Build your first .onion Hidden Service.&lt;/li&gt;
+  &lt;li&gt;Secure your service.&lt;/li&gt;
+  &lt;li&gt;Test Service Configurations&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe src=&quot;https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FShawkyz1%2Fvideos%2F10215827565814843%2F&amp;amp;width=800&amp;amp;show_text=false&amp;amp;appId=312241548925621&amp;amp;height=350&quot; width=&quot;800&quot; height=&quot;350&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;resources&quot;&gt;:Resources&lt;/h2&gt;
+&lt;p&gt;:Hidden Service Documentation&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.torproject.org/docs/onion-services.html.en&quot;&gt;https://www.torproject.org/docs/onion-services.html.en&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;:Hidden Service Descriptors&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://stem.torproject.org/api/descriptor/hidden_service_descriptor.html?fbclid=IwAR27V5RUNkuskv-ZRkyeMwYIyRrugg1zFuuObegG15xYh6Ked3ywHlaKCfE&quot;&gt;https://stem.torproject.org/api/descriptor/hidden_service_descriptor.html?fbclid=IwAR27V5RUNkuskv-ZRkyeMwYIyRrugg1zFuuObegG15xYh6Ked3ywHlaKCfE&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;:How Tor Connects to hidden service&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://tor.stackexchange.com/questions/672/how-do-onion-addresses-exactly-work/674?fbclid=IwAR17wtJZIlAswE94Izmi0f6uk40K7Glwq69AfGiWWR50zvCQp2tjtgjDcQM#674&quot;&gt;https://tor.stackexchange.com/questions/672/how-do-onion-addresses-exactly-work/674?fbclid=IwAR17wtJZIlAswE94Izmi0f6uk40K7Glwq69AfGiWWR50zvCQp2tjtgjDcQM#674&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;:Best practices&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://riseup.net/en/security/network-security/tor/onionservices-best-practices?fbclid=IwAR3YJlchLmxW9hCbGJp_ICY2bahXFz-Wr0FBz6AvOoflK-0pPeVmzzqijxE&quot;&gt;https://riseup.net/en/security/network-security/tor/onionservices-best-practices?fbclid=IwAR3YJlchLmxW9hCbGJp_ICY2bahXFz-Wr0FBz6AvOoflK-0pPeVmzzqijxE&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;:Scanner&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://onionscan.org/&quot;&gt;https://onionscan.org/&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 26 Jan 2019 14:09:47 +0100</pubDate>
+        <link>http://localhost:4000/posts/TOR-Basics/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/TOR-Basics/</guid>
+        
+        <category>TOR</category>
+        
+        <category>Security</category>
+        
+        
+        <category>posts</category>
+        
+      </item>
     
       <item>
         <title>Meta Programming with Roslyn</title>
-        <description>&lt;div style=&quot;direction:ltr&quot;&gt;
-Meta Programming with Roslyn
-&lt;br /&gt;&lt;br /&gt;
+        <description>&lt;p&gt;Meta Programming with Roslyn&lt;/p&gt;
 
-a video in Arabic explaining the #.Net Compiler Platform SDK aka. #Roslyn and how to use it to analyze and refactor code.
+&lt;p&gt;a video in Arabic explaining the #.Net Compiler Platform SDK aka. #Roslyn and how to use it to analyze and refactor code.&lt;/p&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;iframe src=&quot;https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FShawkyz1%2Fvideos%2F10214035217447254%2F&amp;amp;width=800&amp;amp;show_text=false&amp;amp;appId=312241548925621&amp;amp;height=350&quot; width=&quot;800&quot; height=&quot;350&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
 
-&lt;br /&gt;&lt;br /&gt;
-
-&lt;br /&gt;
- &lt;iframe src=&quot;https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FShawkyz1%2Fvideos%2F10214035217447254%2F&amp;amp;width=800&amp;amp;show_text=false&amp;amp;appId=312241548925621&amp;amp;height=350&quot; width=&quot;800&quot; height=&quot;350&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
-
- &lt;br /&gt;
- 
- &lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 01 Jun 2018 18:09:47 +0200</pubDate>
-        <link>https://shawkyz.info/posts/Roslyn/</link>
-        <guid isPermaLink="true">https://shawkyz.info/posts/Roslyn/</guid>
+        <link>http://localhost:4000/posts/Roslyn/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/Roslyn/</guid>
         
         <category>.Net</category>
         
@@ -44,38 +83,28 @@ a video in Arabic explaining the #.Net Compiler Platform SDK aka. #Roslyn and ho
     
       <item>
         <title>How to design your bot to handle commands commands like cancel and help</title>
-        <description>&lt;div style=&quot;direction:ltr&quot;&gt;
-How to design your bot to handle commands commands like cancel and help
-&lt;br /&gt;&lt;br /&gt;
+        <description>&lt;p&gt;How to design your bot to handle commands commands like cancel and help&lt;/p&gt;
 
-The Sample&#39;s Repo:
-&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;The Sample’s Repo:&lt;/p&gt;
 
-&lt;a href=&quot;https://github.com/ShawkyZ/MsBotFrameworkSample&quot;&gt;https://github.com/ShawkyZ/MsBotFrameworkSample&lt;/a&gt;
-&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/ShawkyZ/MsBotFrameworkSample&quot;&gt;https://github.com/ShawkyZ/MsBotFrameworkSample&lt;/a&gt;&lt;/p&gt;
 
-Principles of design.. BotFramework Documentation:
-&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;Principles of design.. BotFramework Documentation:&lt;/p&gt;
 
-&lt;a href=&quot;https://docs.microsoft.com/en-us/bot-framework/bot-service-design-navigation&quot;&gt;https://docs.microsoft.com/en-us/bot-framework/bot-service-design-navigation&lt;/a&gt;
-&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/bot-framework/bot-service-design-navigation&quot;&gt;https://docs.microsoft.com/en-us/bot-framework/bot-service-design-navigation&lt;/a&gt;&lt;/p&gt;
 
-Global Message Handling Sample Repo from Microsoft:
-&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;Global Message Handling Sample Repo from Microsoft:&lt;/p&gt;
 
-&lt;a href=&quot;https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-GlobalMessageHandlers&quot;&gt;https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-GlobalMessageHandlers&lt;/a&gt;
-&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-GlobalMessageHandlers&quot;&gt;https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/core-GlobalMessageHandlers&lt;/a&gt;&lt;/p&gt;
 
-&lt;br /&gt;
- &lt;iframe src=&quot;https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FShawkyz1%2Fvideos%2F10213459809982427%2F&amp;amp;width=800&amp;amp;show_text=false&amp;amp;appId=312241548925621&amp;amp;height=350&quot; width=&quot;800&quot; height=&quot;350&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;iframe src=&quot;https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FShawkyz1%2Fvideos%2F10213459809982427%2F&amp;amp;width=800&amp;amp;show_text=false&amp;amp;appId=312241548925621&amp;amp;height=350&quot; width=&quot;800&quot; height=&quot;350&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
 
- &lt;br /&gt;
- 
- &lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 18 Mar 2018 17:09:47 +0100</pubDate>
-        <link>https://shawkyz.info/posts/BotFramework5/</link>
-        <guid isPermaLink="true">https://shawkyz.info/posts/BotFramework5/</guid>
+        <link>http://localhost:4000/posts/BotFramework5/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/BotFramework5/</guid>
         
         <category>.Net</category>
         
@@ -94,7 +123,7 @@ Global Message Handling Sample Repo from Microsoft:
 
 &lt;p&gt;في العادي ممكن تطبقها على اي Web App بس هقترح Libraries او tools او Best Practices ممكن تستعملها لو شغال بال ASP.Net.&lt;/p&gt;
 
-&lt;h2 id=&quot;cross-site-scriptinghttpswwwowasporgindexphpcross-sitescriptingxss&quot;&gt;&lt;a href=&quot;https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)&quot;&gt;Cross Site Scripting&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;cross-site-scripting&quot;&gt;&lt;a href=&quot;https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)&quot;&gt;Cross Site Scripting&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;فيه طرق كتير معروفة عشان تـPrevent ال XSS بانواعها ، هتعتمد يا اما على ال Input Validation 
 انك بتشوف هل ال User مثلًا حاول يكتب tag معينة زي script tag فتروح تمسحها، او انك تـ Html Encode ال output.&lt;/p&gt;
@@ -128,7 +157,7 @@ Global Message Handling Sample Repo from Microsoft:
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;cross-site-request-forgeryhttpswwwowasporgindexphpcross-siterequestforgerycsrf&quot;&gt;&lt;a href=&quot;https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)&quot;&gt;Cross Site Request Forgery&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;cross-site-request-forgery&quot;&gt;&lt;a href=&quot;https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)&quot;&gt;Cross Site Request Forgery&lt;/a&gt;&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;من اول VS 12 لما تعمل ASP.Net Web Forms App في ال Master Page بيكون فيه Prevention لل CSRF ، 
@@ -149,7 +178,7 @@ Global Message Handling Sample Repo from Microsoft:
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;clickjackinghttpswwwowasporgindexphpclickjacking&quot;&gt;&lt;a href=&quot;https://www.owasp.org/index.php/Clickjacking&quot;&gt;ClickJacking&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;clickjacking&quot;&gt;&lt;a href=&quot;https://www.owasp.org/index.php/Clickjacking&quot;&gt;ClickJacking&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;قبل ما تفكر في الحل اسال نفسك ، اي هي الصفحات اللي هتتاخد كـ iframe ؟ 
 هل كلها هتستعمل كـ iframe ؟ طب هتستعمل برة ال domain بتاعي ؟
@@ -171,7 +200,7 @@ Global Message Handling Sample Repo from Microsoft:
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;unrestricted-file-uploadhttpswwwowasporgindexphpunrestrictedfileupload&quot;&gt;&lt;a href=&quot;https://www.owasp.org/index.php/Unrestricted_File_Upload&quot;&gt;Unrestricted File Upload&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;unrestricted-file-upload&quot;&gt;&lt;a href=&quot;https://www.owasp.org/index.php/Unrestricted_File_Upload&quot;&gt;Unrestricted File Upload&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;اكيد مش هينفع تسمح  للـ user انه يـ Upload اي file عندك ، فلازم يكون عندك Whitelist بانواع ال files اللي هتسمح بيها بس. 
 مثلا انت هتسمح بـ : txt, doc, pdf 
@@ -187,7 +216,7 @@ Global Message Handling Sample Repo from Microsoft:
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;sql-injectionshttpswwwowasporgindexphpsqlinjection&quot;&gt;&lt;a href=&quot;https://www.owasp.org/index.php/SQL_Injection&quot;&gt;SQL Injections&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;sql-injections&quot;&gt;&lt;a href=&quot;https://www.owasp.org/index.php/SQL_Injection&quot;&gt;SQL Injections&lt;/a&gt;&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -203,7 +232,7 @@ Global Message Handling Sample Repo from Microsoft:
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;privilege-escalationhttpswwwowasporgindexphptestingforprivilegeescalationotg-authz-003&quot;&gt;&lt;a href=&quot;https://www.owasp.org/index.php/Testing_for_Privilege_escalation_(OTG-AUTHZ-003)&quot;&gt;Privilege Escalation&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;privilege-escalation&quot;&gt;&lt;a href=&quot;https://www.owasp.org/index.php/Testing_for_Privilege_escalation_(OTG-AUTHZ-003)&quot;&gt;Privilege Escalation&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;لو عندك مثلا 2 Roles للـ Users بتوعك (Admin,User) فلازم تتأكد ان ال User العادي ميقدرش ينفذ نفس العمليات اللي يقدر ينفذها ال Admin.
 أسهل طريقة عشان تtest بيها الموضوع انك تحاول تـ Execute Function المفروض انها تشتغل بصلاحيات الـ Admin بس.
@@ -211,7 +240,7 @@ Global Message Handling Sample Repo from Microsoft:
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;indirect-object-referencehttpswwwowasporgindexphptestingforinsecuredirectobjectreferencesotg-authz-004&quot;&gt;&lt;a href=&quot;https://www.owasp.org/index.php/Testing_for_Insecure_Direct_Object_References_(OTG-AUTHZ-004)&quot;&gt;Indirect Object Reference&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;indirect-object-reference&quot;&gt;&lt;a href=&quot;https://www.owasp.org/index.php/Testing_for_Insecure_Direct_Object_References_(OTG-AUTHZ-004)&quot;&gt;Indirect Object Reference&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;عشان تـ Prevent ال IDOR لازم تتأكد من كذا حاجة:&lt;/p&gt;
 
 &lt;ol&gt;
@@ -221,13 +250,13 @@ Global Message Handling Sample Repo from Microsoft:
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;open-redirectionhttpswwwowasporgindexphpunvalidatedredirectsandforwardscheatsheet&quot;&gt;&lt;a href=&quot;https://www.owasp.org/index.php/Unvalidated_Redirects_and_Forwards_Cheat_Sheet&quot;&gt;Open Redirection&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;open-redirection&quot;&gt;&lt;a href=&quot;https://www.owasp.org/index.php/Unvalidated_Redirects_and_Forwards_Cheat_Sheet&quot;&gt;Open Redirection&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;ابسط طريقة انك تـCheck لو كان ال Url اللي عايز يروحله Local Url ولا لأ ، لو لأ رجعه عال Index بتاعتك مثلًا او تخليه يـ Confirm انه هيـredirect برة ال domain بتاعك.
 ممكن برضه تاخد &lt;a href=&quot;http://www.asp.net/mvc/overview/security/preventing-open-redirection-attacks&quot;&gt;اللينك ده كـ reference&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;section&quot;&gt;مصادر ممكن تقرأ منها:&lt;/h3&gt;
+&lt;h3 id=&quot;مصادر-ممكن-تقرأ-منها&quot;&gt;مصادر ممكن تقرأ منها:&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.troyhunt.com/2011/12/free-ebook-owasp-top-10-for-net.html&quot;&gt;كتاب OWASP Top 10 For .Net من Troy Hunt&lt;/a&gt;&lt;/li&gt;
@@ -241,8 +270,8 @@ Global Message Handling Sample Repo from Microsoft:
 &lt;/blockquote&gt;
 </description>
         <pubDate>Mon, 18 Dec 2017 17:09:47 +0100</pubDate>
-        <link>https://shawkyz.info/posts/ASP-Security/</link>
-        <guid isPermaLink="true">https://shawkyz.info/posts/ASP-Security/</guid>
+        <link>http://localhost:4000/posts/ASP-Security/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/ASP-Security/</guid>
         
         <category>ASP.Net</category>
         
@@ -255,52 +284,26 @@ Global Message Handling Sample Repo from Microsoft:
     
       <item>
         <title>Connecting a bot with RaspberryPi running Windows IoT Core.</title>
-        <description>&lt;p&gt;في الفيديو ده بشرح ازاي تربط ال Raspberry Pi بـ Bot معمول بـ Microsoft Bot Framework عشان يبدا يفهم امر معين من ال user زي مثلا “Turn the yellow led on”.
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;في الفيديو ده بشرح ازاي تربط ال Raspberry Pi بـ Bot معمول بـ Microsoft Bot Framework عشان يبدا يفهم امر معين من ال user زي مثلا “Turn the yellow led on”.&lt;/p&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;iframe src=&quot;https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FShawkyz1%2Fvideos%2F10210678421969465%2F&amp;amp;width=800&amp;amp;show_text=false&amp;amp;appId=312241548925621&amp;amp;height=350&quot; width=&quot;800&quot; height=&quot;350&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 06 May 2017 18:09:47 +0200</pubDate>
-        <link>https://shawkyz.info/posts/ConnectBotWithRaspberryPi/</link>
-        <guid isPermaLink="true">https://shawkyz.info/posts/ConnectBotWithRaspberryPi/</guid>
+        <link>http://localhost:4000/posts/ConnectBotWithRaspberryPi/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/ConnectBotWithRaspberryPi/</guid>
         
         <category>.Net</category>
         
-        <category>BotFramework</category>
+        <category>C#</category>
         
-        <category>RaspberryPi</category>
+        <category>Botframework</category>
+        
+        <category>Raspberrypi</category>
         
         <category>LUIS</category>
-        
-        
-        <category>posts</category>
-        
-      </item>
-    
-      <item>
-        <title>Writing Multithreaded test to reproduce SQL Deadlocks.</title>
-        <description>&lt;p&gt;في الفيديو ده بشرح ازاي تكتب Multi threaded Test نقدر من خلاله نـ reproduce ال SQL Deadlocks
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;iframe src=&quot;https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FShawkyz1%2Fvideos%2F10210615964568069%2F&amp;amp;width=800&amp;amp;show_text=false&amp;amp;appId=312241548925621&amp;amp;height=350&quot; width=&quot;800&quot; height=&quot;350&quot; style=&quot;border:none;overflow:hidden&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sat, 29 Apr 2017 18:09:47 +0200</pubDate>
-        <link>https://shawkyz.info/posts/MultiThreadingTesting/</link>
-        <guid isPermaLink="true">https://shawkyz.info/posts/MultiThreadingTesting/</guid>
-        
-        <category>.Net</category>
-        
-        <category>SQL</category>
-        
-        <category>Testing</category>
-        
-        <category>Deadlocks</category>
         
         
         <category>posts</category>
