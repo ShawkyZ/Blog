@@ -19,7 +19,6 @@ facebook_username: "shawkyz1"
 linkedin_username: "shawkyz"
 github_username:  "shawkyz"
 disqus_username:  "shawkyz"
-
 # Build settings
 markdown: kramdown
 relative_permalinks: false

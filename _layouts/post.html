@@ -15,9 +15,11 @@ layout: default
   </p>
 
   <div class="post-content">
-
     {{ content }}
-
+    <br />
+    <article class="comments">
+    {% include disqus.html %}
+  </article>
 <br />
     {% if page.next.url %}
       <a class="link-to-post" href="{{ page.next.url }}">
